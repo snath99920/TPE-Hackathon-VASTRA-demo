@@ -1,5 +1,6 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/views/productdescription.dart';
 import 'package:myapp/widgets/widgets.dart';
 
 class HomePage extends StatefulWidget {
@@ -215,58 +216,66 @@ class _HomePageState extends State<HomePage> {
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(5.0),
-                  child: Card(
-                    color: Colors.white,
-                    child: Container(
-                      width: width * 0.45,
-                      height: 250,
-                      child: Stack(
-                        alignment: Alignment.bottomCenter,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                top: 5.0, left: 5.0, right: 5.0),
-                            child: Image.asset(
-                              'assets/images/m4.jpeg',
-                              height: 245,
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                          Container(
-                            color: Colors.white,
-                            height: 50,
-                            alignment: Alignment.center,
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
-                              child: Column(
-                                children: [
-                                  SizedBox(
-                                    height: 6,
-                                  ),
-                                  Text(
-                                    "Casual Petal",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 6,
-                                  ),
-                                  Text(
-                                    "Rs 349",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProductDescription()));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Card(
+                      color: Colors.white,
+                      child: Container(
+                        width: width * 0.45,
+                        height: 250,
+                        child: Stack(
+                          alignment: Alignment.bottomCenter,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 5.0, left: 5.0, right: 5.0),
+                              child: Image.asset(
+                                'assets/images/m4.jpeg',
+                                height: 245,
+                                fit: BoxFit.cover,
                               ),
                             ),
-                          ),
-                        ],
+                            Container(
+                              color: Colors.white,
+                              height: 50,
+                              alignment: Alignment.center,
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 8.0),
+                                child: Column(
+                                  children: [
+                                    SizedBox(
+                                      height: 6,
+                                    ),
+                                    Text(
+                                      "Casual Petal",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 6,
+                                    ),
+                                    Text(
+                                      "Rs 349",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

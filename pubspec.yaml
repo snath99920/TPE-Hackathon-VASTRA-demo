@@ -48,6 +48,10 @@ flutter:
     - assets/images/m2.jpeg
     - assets/images/m3.jpeg
     - assets/images/m4.jpeg
+    - assets/images/m41.jpeg
+    - assets/images/m42.jpeg
+    - assets/images/m43.jpeg
+    - assets/images/m44.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
