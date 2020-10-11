@@ -21,12 +21,14 @@ class _VastraAnalyzeState extends State<VastraAnalyze> {
       ),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               child: Image.asset(
-                "assets/images/analyze.jpeg",
+                "assets/images/analyze.png",
                 height: height,
-                fit: BoxFit.cover,
+                // fit: BoxFit.cover,
               ),
             ),
             Container(
