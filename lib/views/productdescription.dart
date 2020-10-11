@@ -1,8 +1,9 @@
+import 'dart:ui';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/views/vastramain.dart';
 import 'package:myapp/widgets/widgets.dart';
-import 'package:myapp/widgets/optiontile.dart';
 
 class ProductDescription extends StatefulWidget {
   @override
@@ -73,6 +74,105 @@ class _ProductDescriptionState extends State<ProductDescription> {
 
   @override
   Widget build(BuildContext context) {
+    _uploadAlert(BuildContext context) async {
+      return showDialog(
+          context: context,
+          builder: (context) {
+            return BackdropFilter(
+              filter: ImageFilter.blur(
+                sigmaX: 10.0,
+                sigmaY: 10.0,
+              ),
+              child: AlertDialog(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                title: Text(
+                  "Upload Image",
+                  style: TextStyle(color: Colors.green),
+                ),
+                content: Container(
+                  height: 100.0,
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => VastraMain()));
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[300],
+                                ),
+                              ),
+                              height: 100,
+                              width: 100,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.photo_camera),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    "Click a picture",
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 15,
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => VastraMain()));
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[300],
+                                ),
+                              ),
+                              height: 100,
+                              width: 100,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.photo_library),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    "Upload a photo",
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            );
+          });
+    }
+
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -285,23 +385,32 @@ class _ProductDescriptionState extends State<ProductDescription> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Container(
-                            width: width * 0.92,
-                            height: 50.0,
-                            decoration: BoxDecoration(
-                              color: Colors.green,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "TRY THIS OUTFIT WITH VASTRA!",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16.0,
-                                  ),
-                                )
-                              ],
+                          GestureDetector(
+                            onTap: () {
+                              _uploadAlert(context);
+                              // Navigator.push(
+                              //     context,
+                              //     MaterialPageRoute(
+                              //         builder: (context) => VastraMain()));
+                            },
+                            child: Container(
+                              width: width * 0.92,
+                              height: 50.0,
+                              decoration: BoxDecoration(
+                                color: Colors.green,
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "TRY THIS OUTFIT WITH VASTRA!",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16.0,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ],
