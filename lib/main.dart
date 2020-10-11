@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/views/splash.dart';
 // import 'package:myapp/views/homepage.dart';
 import 'package:myapp/widgets/bottomnavbar.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyCustomBottomNavigationBar(),
+      home: SplashScreen(),
     );
   }
 }

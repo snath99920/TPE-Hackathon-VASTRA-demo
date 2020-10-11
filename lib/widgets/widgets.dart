@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 Widget appBar(BuildContext context) {
   return Container(
-    child: CircleAvatar(
-      radius: 25.0,
-      backgroundColor: Colors.white,
-      // child: Image.asset(
-      //   'assets/icon/U.png',
-      //   height: 35,
-      // ),
+    // child: CircleAvatar(
+    // radius: 25.0,
+    // backgroundColor: Colors.white,
+    child: Image.asset(
+      'assets/icon/icon2.png',
+      height: 35,
     ),
+    // ),
   );
 }
 

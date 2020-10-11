@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/views/vastraanalyze.dart';
 import 'package:myapp/widgets/widgets.dart';
 
 class VastraMain extends StatefulWidget {
@@ -33,27 +34,35 @@ class _VastraMainState extends State<VastraMain> {
                 SizedBox(
                   height: height * 0.05,
                 ),
-                Container(
-                  height: 50,
-                  width: width * 0.8,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.check,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => VastraAnalyze()));
+                  },
+                  child: Container(
+                    height: 50,
+                    width: width * 0.8,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.check,
+                        ),
+                        SizedBox(
+                          width: 20.0,
+                        ),
+                        Text(
+                          "VASTRA ANALYZE",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ],
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300],
                       ),
-                      SizedBox(
-                        width: 20.0,
-                      ),
-                      Text(
-                        "VASTRA ANALYZE",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    ],
-                  ),
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[300],
                     ),
                   ),
                 ),
