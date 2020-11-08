@@ -201,7 +201,7 @@ class _ShoeDescriptionState extends State<ShoeDescription> {
                       Row(
                         children: [
                           Text(
-                            "Nike  ",
+                            "Hangup  ",
                             style: GoogleFonts.lato(
                               textStyle: TextStyle(
                                 color: Colors.black,
@@ -211,7 +211,7 @@ class _ShoeDescriptionState extends State<ShoeDescription> {
                             ),
                           ),
                           Text(
-                            "Flex Experience Run 9 Running Shoes",
+                            "Sherwani, gold (Men)",
                             style: GoogleFonts.lato(
                               textStyle: TextStyle(
                                 color: Colors.grey,
@@ -227,7 +227,7 @@ class _ShoeDescriptionState extends State<ShoeDescription> {
                       Row(
                         children: [
                           Text(
-                            "Rs 2349  ",
+                            "Rs 7349  ",
                             style: GoogleFonts.lato(
                               textStyle: TextStyle(
                                 color: Colors.black,
@@ -237,7 +237,7 @@ class _ShoeDescriptionState extends State<ShoeDescription> {
                             ),
                           ),
                           Text(
-                            "Rs 4099 ",
+                            "Rs 14099 ",
                             style: GoogleFonts.lato(
                               textStyle: TextStyle(
                                 color: Colors.grey[400],
@@ -247,7 +247,7 @@ class _ShoeDescriptionState extends State<ShoeDescription> {
                             ),
                           ),
                           Text(
-                            "   (43% off)",
+                            "   (47% off)",
                             style: GoogleFonts.lato(
                               textStyle: TextStyle(
                                 color: Colors.orange,
@@ -294,7 +294,7 @@ class _ShoeDescriptionState extends State<ShoeDescription> {
                         height: 10,
                       ),
                       Text(
-                        "Comfortable sports shoes for morning run. Comfortable material and great fit.",
+                        "Indian party wear for men. All the comfort you need while looking fabulous.",
                         style: TextStyle(
                           fontSize: 15.0,
                           color: Colors.black,

@@ -26,7 +26,7 @@ class _VastraMainShoeState extends State<VastraMainShoe> {
         child: Column(
           children: [
             Container(
-              child: Image.asset("assets/images/acin1.png"),
+              child: Image.asset("assets/images/acin1.jpg"),
               height: height,
             ),
             Container(

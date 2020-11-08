@@ -26,7 +26,7 @@ class _VastraMainNewState extends State<VastraMainNew> {
         child: Column(
           children: [
             Container(
-              child: Image.asset("assets/images/acin2.png"),
+              child: Image.asset("assets/images/acin2.jpg"),
               height: height,
             ),
             Container(

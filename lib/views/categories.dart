@@ -148,7 +148,7 @@ class _CategoriesState extends State<Categories> {
                                       height: 6,
                                     ),
                                     Text(
-                                      "Running Shoes",
+                                      "Sherwani, men",
                                       style: TextStyle(
                                         color: Colors.black,
                                       ),
@@ -157,7 +157,7 @@ class _CategoriesState extends State<Categories> {
                                       height: 6,
                                     ),
                                     Text(
-                                      "Rs 499",
+                                      "Rs 7349",
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontWeight: FontWeight.bold,
