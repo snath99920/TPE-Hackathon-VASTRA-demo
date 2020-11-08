@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/views/categories.dart';
 import 'package:myapp/views/homepage.dart';
 
 class MyCustomBottomNavigationBar extends StatefulWidget {
@@ -11,7 +12,7 @@ class _MyCustomBottomNavigationBarState
     extends State<MyCustomBottomNavigationBar> {
   final List<Widget> _children = [
     HomePage(),
-    HomePage(),
+    Categories(),
     HomePage(),
   ];
   int _currentIndex = 0;
@@ -36,7 +37,7 @@ class _MyCustomBottomNavigationBarState
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.category),
-            title: new Text("Categories"),
+            title: new Text("Accessories"),
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.person),
