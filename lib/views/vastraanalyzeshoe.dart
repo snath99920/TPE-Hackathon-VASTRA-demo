@@ -26,7 +26,7 @@ class _VastraAnalyzeShoeState extends State<VastraAnalyzeShoe> {
           children: [
             Container(
               child: Image.asset(
-                "assets/images/analyze.png",
+                "assets/images/acin1fit.jpg",
                 height: height,
                 // fit: BoxFit.cover,
               ),

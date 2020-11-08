@@ -26,7 +26,7 @@ class _VastraAnalyzeNewState extends State<VastraAnalyzeNew> {
           children: [
             Container(
               child: Image.asset(
-                "assets/images/analyze.png",
+                "assets/images/acin2fit.jpg",
                 height: height,
                 // fit: BoxFit.cover,
               ),

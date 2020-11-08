@@ -138,7 +138,7 @@ class _ShoeDescriptionState extends State<ShoeDescription> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => VastraMain()));
+                                      builder: (context) => VastraMainShoe()));
                             },
                             child: Container(
                               decoration: BoxDecoration(
